@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="80dp">
+
+        <RadioButton
+            android:id="@+id/btn_radio_wifi"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Wifi"
+            android:textColor="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/btn_radio_usb"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Usb"
+            android:textColor="@color/white"
+            />
+
+        <RadioButton
+            android:id="@+id/btn_radio_bluetooth"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Bluetooth"/>
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radio_group"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>
